@@ -12,7 +12,9 @@ class EmailAddressParser
   def parse
     email_arr = @emails.split(/[,\s]/)
     email_arr = email_arr.select {|email| email != ""}
-    return email_arr
+    unique_arr = []
+    email_arr.each do |email|
+    end
   end
 
   def duplicate?(email, email_array)
