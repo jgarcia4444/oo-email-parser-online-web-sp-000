@@ -18,6 +18,8 @@ class EmailAddressParser
   def duplicate?(email, email_array)
     if email_array.include?(email)
       return true
+    else
+      return false
     end
   end
 
