@@ -14,6 +14,9 @@ class EmailAddressParser
     email_arr = email_arr.select {|email| email != ""}
     unique_arr = []
     email_arr.each do |email|
+      if !duplicate(email, unique_arr)
+        unique_arr << email
+      end
     end
   end
 
