@@ -18,6 +18,7 @@ class EmailAddressParser
         unique_arr << email
       end
     end
+    unique_arr
   end
 
   def duplicate?(email, email_array)
