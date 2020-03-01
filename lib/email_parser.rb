@@ -15,4 +15,8 @@ class EmailAddressParser
     return email_arr
   end
 
+  def duplicate(email, email_array)
+    
+  end
+
 end
