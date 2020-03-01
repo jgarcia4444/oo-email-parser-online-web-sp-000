@@ -15,9 +15,10 @@ class EmailAddressParser
     return email_arr
   end
 
-  def duplicate(email, email_array)
+  def duplicate?(email, email_array)
     if email_array.include?(email)
       return true
+    end
   end
 
 end
