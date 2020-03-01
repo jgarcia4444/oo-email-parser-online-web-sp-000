@@ -12,7 +12,7 @@ class EmailAddressParser
   def parse
     email_arr = @emails.split(/[,\s]/)
     email_arr = email_arr.select {|email| email != ""}
-    print email_arr
+    return email_arr
   end
 
 end
